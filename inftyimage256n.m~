@@ -1,0 +1,7 @@
+function infty=inftyimage256
+
+
+infty=mod(0:256*256, 256);
+infty=reshape(infty(1:256*256), 256, 256);
+infty=uint8(infty);
+infty=
