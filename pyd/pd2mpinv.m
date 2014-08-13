@@ -1,19 +1,20 @@
-function out=pd2im(pyramid)
+function out=pd2mpinv(pyramid)
+% TODO: needs documentation!!
 
 [m,n]=size(pyramid{1});
 
 out=[];
 
 for i=1:length(pyramid)
-	hp=pyramid{i};
+	hp=imresize(pyramid{i}, [m, n]);%, 'nearest');
 	[mm, nn]=size(hp);
 	if i==1
 		hplp=[hp];
 	else
-		hplp=[hp;255*ones(m-mm, nn)];
+		hplp=[hp;zeros(m-mm, nn)];
 	end
 	
-	out=[out, hplp];
+	out=[hplp, out];
 	
 
 % 	figure(20); imshow(uint8(out));

@@ -1,4 +1,5 @@
 function out=pd2im(pyramid)
+% TODO: needs documentation!!
 
 [m,n]=size(pyramid{1});
 

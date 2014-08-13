@@ -1,4 +1,5 @@
 function qdiff=pm_msuqi(x, y, w, sigma, nlevels)
+% TODO: Needs to be tested and documented!!
 
 if size(x, 3)>1 x=rgb2gray(x); end
 if size(y, 3)>1 y=rgb2gray(y); end

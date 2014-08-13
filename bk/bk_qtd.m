@@ -4,7 +4,7 @@ function [b_map, d_map]=bk_qtd(a, ws)
 [am, an, ad]=size(a);
 
 
-a_sampling_maps=conv_iterator(a, ws);
+a_sampling_maps=ut_cnvit(a, ws);
 a_sampling_maps=reshape(a_sampling_maps, [prod(size(a_sampling_maps))/wd, wd])';
 
 step=0;

@@ -47,8 +47,8 @@ for i1 = 1:zt
 
   % perform expansion if necessary
   if (any(ew))
-  	M1 = adb(M1,ew);
-  	M2 = adb(M2,ew);
+  	M1 = ut_adb(M1,ew);
+  	M2 = ut_adb(M2,ew);
   end;	
  
  	% perform filtering 

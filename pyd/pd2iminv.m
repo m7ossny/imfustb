@@ -1,4 +1,5 @@
 function out=pd2iminv(pyramid)
+% stitches pyramid structure in a spanned image with inverted color. Mainly for papers artwork.
 
 [m,n]=size(pyramid{1});
 
